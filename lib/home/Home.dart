@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/constrant.dart';
+import 'package:grocery/constant.dart';
 import 'package:grocery/home/BottomNavBar.dart';
 import 'package:grocery/home/LabelWIthActionButton.dart';
 import 'package:grocery/product/ProductCategories.dart';
 import 'package:grocery/home/Profile.dart';
-import 'package:grocery/product/RecomendationProducts.dart';
+import 'package:grocery/product/RecommendationProducts.dart';
 import 'package:grocery/product/TopProducts.dart';
 import 'package:grocery/home/SearchBar.dart';
 import 'package:grocery/products/ProductGroupGridItems.dart';

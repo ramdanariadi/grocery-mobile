@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/chart/Cart.dart';
-import 'package:grocery/constrant.dart';
+import 'package:grocery/constant.dart';
 import 'package:grocery/home/Home.dart';
 import 'package:grocery/products/ProductGroupGridItems.dart';
 import 'package:grocery/products/Products.dart';
@@ -36,7 +36,7 @@ class BottomNavBar extends StatelessWidget {
           InkWell(
               onTap: () {
                 if (ModalRoute.of(context)!.settings.name != Home.routeName)
-                  Navigator.popAndPushNamed(context, Home.routeName);
+                  Navigator.pop(context);
               },
               child: Icon(Icons.home,
                   size: 32,
@@ -46,7 +46,7 @@ class BottomNavBar extends StatelessWidget {
           GestureDetector(
               onTap: () {
                 if (ModalRoute.of(context)!.settings.name != Products.routeName)
-                  Navigator.popAndPushNamed(context, Products.routeName);
+                  Navigator.pushNamed(context, Products.routeName);
               },
               child: Icon(
                 Icons.grid_view_rounded,
@@ -58,7 +58,7 @@ class BottomNavBar extends StatelessWidget {
           GestureDetector(
               onTap: () {
                 if (ModalRoute.of(context)!.settings.name != Cart.routeName)
-                  Navigator.popAndPushNamed(context, Cart.routeName);
+                  Navigator.pushNamed(context, Cart.routeName);
               },
               child: Icon(
                 Icons.shopping_bag,
@@ -67,7 +67,7 @@ class BottomNavBar extends StatelessWidget {
               )),
           GestureDetector(
               onTap: () {
-                Navigator.popAndPushNamed(context, MyAccount.routeName);
+                Navigator.pushNamed(context, MyAccount.routeName);
               },
               child: Icon(
                 Icons.account_circle_outlined,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/chart/Cart.dart';
-import 'package:grocery/constrant.dart';
+import 'package:grocery/constant.dart';
 import 'package:grocery/home/Home.dart';
 import 'package:grocery/SearchPage/SearchPage.dart';
 import 'package:grocery/product/ProductCard.dart';
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
           if (!(sharedPreferences.getBool("authenticated") ?? false)) {
             return MaterialPageRoute(builder: (context) => Login());
           }
-          return CustomPageRoute(child: MyAccount());
+          return MaterialPageRoute(builder: (context) => MyAccount());
         }
 
         assert(false, 'need to implement ${setting.name}');

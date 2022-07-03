@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/constrant.dart';
+import 'package:grocery/constant.dart';
 import 'package:grocery/profile/MyAccount.dart';
 
 class Profile extends StatelessWidget {
-  String getGreting() {
+  String getGreeting() {
     DateTime time = DateTime.now();
     int hour = time.hour;
     if (hour.clamp(12, 18) == hour) {
@@ -35,7 +35,7 @@ class Profile extends StatelessWidget {
                 Container(
                   // margin: EdgeInsets.only(bottom: 9),
                   child: Text(
-                    this.getGreting(),
+                    this.getGreeting(),
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
